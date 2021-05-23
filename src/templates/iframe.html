@@ -1,0 +1,25 @@
+<!--
+Copyright (c) 2021, Marshall B. Hahn
+All rights reserved.
+
+This source code is licensed under the BSD-style license found in the
+LICENSE file in the root directory of this source tree.
+-->
+
+<!-- <%= htmlWebpackPlugin.options.warning %> -->
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <% _.forEach(htmlWebpackPlugin.options.vendorCss, function(css) { %>
+    <link href="<%= css %>" rel="stylesheet" />
+    <% }); %>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <% _.forEach(htmlWebpackPlugin.options.vendorJs, function(js) { %>
+    <script type="text/javascript" src="<%= js %>"></script>
+    <% }); %>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+{
+  "name": "zendesk-tag-tool",
+  "version": "1.0.0",
+  "description": "Zendesk app to help agents quickly search through and apply tags from a pre-defined list on Airtable.",
+  "keywords": [
+    "zendesk",
+    "tag",
+    "tool"
+  ],
+  "author": "@marshallhahn",
+  "license": "BSD-4-Clause",
+  "engines": {
+    "node": ">=6.11.5"
+  },
+  "scripts": {
+    "start": "zcli apps:server ./dist",
+    "watch": "webpack --watch --mode development",
+    "test": "jest",
+    "build:dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "validate": "zcli apps:validate ./dist",
+    "create": "zcli apps:create ./dist",
+    "update": "zcli apps:update ./dist",
+    "package": "zcli apps:package ./dist",
+    "clean": "zcli apps:clean ./dist",
+    "bump-major": "zcli apps:bump -M .",
+    "bump-minor": "zcli apps:bump -m .",
+    "bump-patch": "zcli apps:bump -p ."
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.12.0",
+    "@babel/core": "^7.12.0",
+    "@babel/preset-env": "^7.12.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "css-loader": "^5.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.0.0",
+    "postcss": "^8.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^4.0.4",
+    "postcss-preset-env": "^6.7.0",
+    "precss": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@reduxjs/toolkit": "^1.4.0",
+    "@svgr/webpack": "^5.4.0",
+    "@zendeskgarden/react-buttons": "^8.24.2",
+    "@zendeskgarden/react-forms": "^8.24.2",
+    "@zendeskgarden/react-grid": "^8.24.2",
+    "@zendeskgarden/react-loaders": "^8.24.2",
+    "@zendeskgarden/react-theming": "^8.24.2",
+    "@zendeskgarden/react-typography": "^8.24.2",
+    "@zendeskgarden/svg-icons": "^6.24.0",
+    "airtable": "0.9.0",
+    "axios": "^0.20.0",
+    "fuse.js": "^6.4.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-is": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.2.0"
+  }
+}

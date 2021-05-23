@@ -1,0 +1,9 @@
+{
+  "_warning": "AUTOMATICALLY GENERATED FROM $/src/translations/en.json - DO NOT MODIFY THIS FILE DIRECTLY",
+  "app": {
+    "name": "Zendesk Tag Tool",
+    "short_description": "Quickly search and add tags into tickets",
+    "long_description": "Zendesk app to help agents quickly search through and apply tags from a pre-defined list on Airtable.",
+    "installation_instructions": "Configure the app settings and click Install."
+  }
+}

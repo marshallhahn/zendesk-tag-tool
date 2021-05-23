@@ -1,0 +1,39 @@
+{
+  "name": "Zendesk Tag Tool",
+  "author": {
+    "name": "@marshallhahn",
+    "email": "hello@marshallhahn.com",
+    "url": "https://marshallhahn.com"
+  },
+  "defaultLocale": "en",
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "assets/iframe.html"
+      },
+      "new_ticket_sidebar": {
+        "url": "assets/iframe.html"
+      }
+    }
+  },
+  "domainWhitelist": ["api.airtable.com"],
+  "parameters": [
+    {
+      "name": "AIRTABLE_API_KEY",
+      "type": "password",
+      "required": true
+    },
+    {
+      "name": "AIRTABLE_BASE_ID",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "AIRTABLE_TABLE_ID",
+      "type": "text",
+      "required": true
+    }
+  ],
+  "version": "1.0.0",
+  "frameworkVersion": "2.0"
+}
